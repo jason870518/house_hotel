@@ -1,0 +1,211 @@
+/* booking */
+
+.bookingnow 
+    position: fixed
+    // position: absolute
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    // z-index: 9999999
+    overflow: scroll
+
+.modal.show 
+    .modal-dialog
+        transform: translateX(-50%)
+
+.booking-container   
+    outline: solid 1px
+    // width: 80%
+    // width: 1110px
+    width: 100%
+    max-width: 1280px
+    position: absolute
+    top: 0
+    left: 50%
+    // transform: translate(-50%)
+    background-color: #fff
+
+.modal-content
+    display: grid
+    grid-template-columns: 2fr 3fr
+
+
+.checkformContent 
+    display: flex
+    justify-content: center
+    background-color: #38470B
+    color: #fff
+
+
+.close 
+    position: absolute
+    right: 30px
+    top: 20px
+    font-size: 25px
+    color: #38470B
+    z-index: 9999999
+
+
+.fa-close ::before 
+    content: "\f00d"
+
+
+.checkform 
+    display: flex
+    flex-direction: column
+    width: 70%
+    margin: 120px 0
+
+
+
+.checkform input 
+    padding: 10px
+    margin-top: 5px
+    margin-bottom: 16px
+    border: 0
+//  /* width: 60%; */
+
+
+.checkform p 
+    margin: 0
+    color: #949C7C
+
+
+.checkform hr 
+    width: 100%
+    border: 0
+    background-color: #949C7C
+    height: 1px
+
+
+.checkform .totalprice 
+    color: #fff
+    text-align: right
+
+
+.checkform .totalprice span 
+    font-size: 26px
+    font-weight: 500
+
+.checkform .finishbtn 
+    width: 100%
+    text-align: center
+    border: 2px solid #fff
+    margin-top: 20px
+    padding: 8px 0
+    font-size: 18px
+    text-decoration: none
+    color: #fff
+    font-weight: 500
+    box-sizing: border-box
+    transition: .3s all
+
+
+.checkform .finishbtn:hover 
+    border-color: #949C7C
+    background-color: #949C7C
+
+
+.checkform .text 
+    font-size: 12px
+    text-align: center
+    color: #fff
+    margin-top: 20px
+
+
+.checkContent 
+    display: flex
+    flex-direction: column
+    padding-left: 30px
+
+
+.checkTitle, .bookingInfoContent, .booingProcessContent 
+    margin-top: 61px
+    width: 90%
+    position: relative
+    display: flex
+
+.checktitle, .bookingInfotitle, .bookingProcesstitle 
+    font-size: 24px
+    font-weight: 700
+    margin: 0px
+    background-color: #fff
+    padding: 10px 15px 10px 0
+    position: relative
+    z-index: 1
+
+
+.checkTitle::before, .bookingInfoContent::before, .booingProcessContent::before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 1px
+    background-color: #38470B40
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    z-index: 0
+
+.bookingRoomSize, .bookingCheckIn 
+    font-weight: 500
+    margin: 0
+
+
+.bookingIcon 
+    margin: 10px 2px
+    width: 70px
+    font-size: 12px
+
+.Amenitiesnone 
+    display: none
+
+.bookingInfotitle, .bookingProcesstitle 
+    font-size: 18px
+
+.bookingInfoText  
+    list-style: none
+    padding: 0
+    font-size: 14px
+    font-weight: 300
+
+.bookingProcessChart 
+    width: 80%
+    display: flex
+    margin-bottom: 26px
+
+.bookingProcessChart .chart 
+    width: 30%
+    border: 1px solid #949C7C
+    border-radius: 0 0 10px 10px
+
+.bookingProcessChart .chart .chartImg 
+    background-color: #949C7C
+    position: relative
+    width: 100%
+    height: 50px
+
+.bookingProcessChart .chartImg img 
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+
+.bookingProcessChart .chart p 
+    font-weight: 300
+    font-size: 12px
+    text-align: center
+    padding: 5px 10px
+    line-height: 25px
+
+.bookingProcessChart .nextIcon 
+    width: 5%
+
+.bookingProcessChart .nextIcon p 
+    text-align: center
+    color: #949C7C
+
+.fa-chevron-right:before 
+    content: "\f054"
+
+

@@ -1,0 +1,236 @@
+* 
+    font-family: 'Noto Sans TC', sans-serif
+    position: relative
+
+
+html,body 
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    overflow-x: hidden
+    font-family: 'Noto Sans TC', sans-serif;
+
+
+.containers
+    width: 100vw
+    height: 100vh
+    display: grid
+    grid-template-columns: 40% 60%
+
+
+
+.slide-wrap 
+    display: grid
+    overflow: hidden
+
+.roomimgGroup 
+    overflow: hidden
+    position: relative
+
+
+.slide 
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+  
+    
+#slide_1 
+    background-image: url('https://images.unsplash.com/photo-1551776235-dde6d482980b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80')
+  
+#slide_2 
+    background-image: url("https://images.unsplash.com/photo-1526880792616-4217886b9dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")
+  
+#slide_3 
+    background-image: url("https://images.unsplash.com/photo-1515511856280-7b23f68d2996?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80")
+  
+  
+.navigation 
+    position: absolute
+    bottom: 90px
+    left: 11.5%
+  
+  
+.bar 
+    width: 8px
+    height: 8px
+    margin: 0 4px
+    border: 1px solid #38470B
+    border-radius: 50%
+    display: inline-block
+    cursor: pointer
+    transition: 0.4s
+  
+  
+.bar:hover
+    background-color: #fff
+  
+  
+input[name="r"] 
+    position: absolute
+    visibility: hidden
+  
+  
+.slide-wrap 
+    width: 400%
+    height: 100%
+    display: flex
+  
+  
+.slide 
+    width: 30%
+    transition: 0.6s
+  
+  
+#r1:checked ~ .s1 
+    margin-left: 0
+  
+  
+#r2:checked ~ .s1 
+    margin-left: -30%
+  
+  
+#r3:checked ~ .s1 
+    margin-left: -60%
+  
+  
+  
+  
+#r1:checked ~ .navigation #dot1,
+#r2:checked ~ .navigation #dot2,
+#r3:checked ~ .navigation #dot3 
+    background-color: #38470B
+  
+
+.back 
+    position: absolute
+    top: 80px
+    left: 80px
+    font-weight: 300
+    color: #38470B
+    text-decoration: none
+    font-size: 15px
+    font-weight: 800
+    letter-spacing: 2px
+    z-index: 5
+
+
+.content 
+    position: absolute
+    bottom: 150px
+    margin: 0 auto
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+
+
+.content h1 
+    color: #38470B
+    font-size: 40px
+    font-weight: 700
+    margin: 0
+
+
+.content h1 span 
+    font-size: 20px
+
+
+.btn 
+    border: none
+    font-weight: 500
+    background-color: #38470B
+    color: #fff
+    text-decoration: none
+    font-size: 20px
+    margin-top: 10px
+    padding: 8px 58px
+    cursor: pointer
+
+
+// /* 右邊 */
+.info 
+    overflow-y: scroll
+
+
+.roominfo 
+    margin: 0 45px
+    width: 80%
+
+
+.roomtitle 
+    margin-top: 57px
+    margin-bottom: 38px
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+    flex-wrap: wrap
+    color: #38470B
+    width: 80%
+
+
+.roomtitle h1 
+    font-size: 40px
+    font-weight: 700
+    margin: 0
+
+
+.roomtitle p 
+    font-weight: 500
+
+
+.checkinfo 
+    font-weight: 300
+
+
+.roominfo ul 
+    list-style: none
+    padding: 0
+    margin: 35px 0 53px 0
+
+
+.roominfo ul li 
+    margin: 10px 0
+    font-size: 14px
+    color: #38470B
+
+
+.roomAmenitiesGroup, .bookingAmenities 
+    display: flex
+    flex-wrap: wrap
+
+.roomAmenitiesGroup img, .bookingAmenities img 
+    position: absolute
+    top: 10px
+    left: 50%
+    transform: translateX(-50%)
+
+
+.amenitiesIcon, .bookingIcon 
+    width: 100px
+    text-align: center
+    justify-content: center
+    position: relative
+    margin: 20px 10px
+
+
+.norIcon 
+    opacity: .3
+
+
+.roomAmenitiesGroup p, .bookingAmenities p 
+    font-weight: 100
+    font-size: 12px
+    margin: 0
+    margin-top: 55px
+
+.icon 
+    position: absolute
+    right: 0
+     
+
+
+.vc-container 
+    margin-bottom: 40px
+

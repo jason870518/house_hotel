@@ -1,0 +1,278 @@
+* 
+    font-family: 'Noto Sans TC', sans-serif
+    position: relative
+
+
+html,
+body 
+    margin: 0
+    padding: 0
+    position: relative
+    overflow-x: hidden
+    width: 100%
+    height: 100%  
+
+.home 
+    width: 100%
+    height: 100vh
+    display: grid
+    align-items: center
+
+.slide 
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    height: 100vh
+
+
+#slide_1 
+    background-image: url('~@/assets/image/img-1.jpeg')
+    filter: brightness(.5)
+
+
+#slide_2 
+    background-image: url("~@/assets//image/img-2.jpeg")
+    filter: brightness(.5)
+
+
+#slide_3 
+    background-image: url("~@/assets//image/img-3.jpeg")
+    filter: brightness(.5)
+
+
+#slide_4 
+    background-image: url("~@/assets//image/img-4.jpeg")
+    filter: brightness(.5)
+
+
+.navigation 
+    position: absolute
+    bottom: 46px
+    left: 3.6%
+
+.bar 
+    width: 8px
+    height: 8px
+    margin: 0 4px
+    border: 1px solid white
+    border-radius: 50%
+    display: inline-block
+    cursor: pointer
+    transition: 0.4s
+    z-index: 50
+
+
+.bar:hover 
+    background-color: #fff
+
+
+input[name="r"] 
+    position: absolute
+    visibility: hidden
+
+
+.slide-wrap 
+    width: 400%
+    height: 100%
+    display: flex
+    position: absolute
+
+
+
+.slide 
+    width: 30%;
+    transition: 0.6s
+
+
+#r1:checked~.s1 
+    margin-left: 0
+
+
+#r2:checked~.s1 
+    margin-left: -30%
+
+
+#r3:checked~.s1 
+    margin-left: -60%
+
+
+#r4:checked~.s1 
+    margin-left: -90%
+
+
+
+#r1:checked~.navigation #dot1,
+#r2:checked~.navigation #dot2,
+#r3:checked~.navigation #dot3,
+#r4:checked~.navigation #dot4 
+    background-color: #fff
+
+.homeContent
+    width: 100%
+    display: grid
+    grid-template-columns: 2fr 3fr
+    align-content: center
+    
+
+
+.homeContact 
+    height: 100%
+    width: 100%
+    color: #000
+    text-align: center
+
+
+
+.homeContact img 
+    margin-bottom: 190px
+    
+
+
+.hometitle 
+    font-weight: 300
+    font-size: 12px
+    color: white
+
+
+.hometext 
+    font-size: 12px
+    color: white
+    letter-spacing: 2px
+    line-height: 25px
+    margin-bottom: 0
+
+
+.homerooms 
+    width: 825px
+    height: 550px
+    z-index: 1
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    cursor: pointer
+    @include pc-width
+        // width: 360px
+
+.room-img 
+    overflow: hidden
+    position: relative
+    text-decoration: none
+
+.room-img
+    img
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 100%
+        height: 100%    
+        z-index: 1
+        
+
+
+.room-img
+    p:hover 
+        opacity: 1
+
+
+.room-img p 
+    width: 100%
+    height: 275px
+    background-color: #38470B80
+    margin: 0
+    position: relative
+    z-index: 20
+    text-align: center
+    color: #fff
+    line-height: 18rem
+    font-size: 19px
+    font-weight: 300
+    opacity: 0
+    transition: .5s all
+
+.route
+    width: 100%
+    height: 275px
+    background-color: #38470B80
+    margin: 0
+    position: relative
+    z-index: 20
+    text-align: center
+    color: #fff
+    line-height: 18rem
+    font-size: 19px
+    font-weight: 300
+    opacity: 0
+    transition: .5s all
+
+
+//  /*loading*/
+
+.loading
+    width: 100vw
+    height: 100vh
+    background: #949C7C
+    position: fixed
+    z-index: 9999999
+
+
+.loading p
+    position: absolute
+    font-size: 20px
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    letter-spacing: 8px
+    // width: 400px
+    color: #fff
+
+
+.hotelName span
+    animation-name: loading
+    animation-duration: 3s
+    animation-delay: 1s
+    filter: blur(0)
+    animation-fill-mode: forwards
+
+
+@keyframes loading
+    from
+        filter: blur(0)
+        opacity: 1
+    
+    40%
+        filter: blur(10px)
+        opacity: 0
+    
+
+    50%
+        filter: blur(10px)
+        opacity: 0
+    
+    to
+        filter: blur(0)
+        opacity: 1
+    
+
+
+.loading
+    animation-name: closeloading
+    animation-duration: 1.5s
+    animation-delay: 5s
+    animation-fill-mode: forwards
+    animation-timing-function: ease-out
+
+
+@keyframes closeloading
+    form
+        opacity: 1
+        
+    
+    
+    99%
+        width: 100vw
+    
+    to
+        opacity: 0
+        width: 0vw
+    
+
