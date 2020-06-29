@@ -8,18 +8,16 @@
     </section>
 
     <section class="home">
-      <!-- <carousel class="slide-wrap"> -->
       <div class="slide-wrap" id="owl-carousel">
         <input type="radio" name="r" id="r1" checked />
         <input type="radio" name="r" id="r2" />
         <input type="radio" name="r" id="r3" />
         <input type="radio" name="r" id="r4" />
-        <!-- <div class="slides"> -->
+        
         <div class="slide s1" id="slide_1"></div>
         <div class="slide" id="slide_2"></div>
         <div class="slide" id="slide_3"></div>
         <div class="slide" id="slide_4"></div>
-        <!-- </div> -->
 
         <div class="navigation">
           <label for="r1" id="dot1" class="bar"></label>
@@ -28,7 +26,6 @@
           <label for="r4" id="dot4" class="bar"></label>
         </div>
       </div>
-      <!-- </carousel> -->
 
       <div class="homeContent container">
         <div class="homeContact">

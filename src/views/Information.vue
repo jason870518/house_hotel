@@ -544,15 +544,11 @@
           </div>
         </div>
       </div>
-      <!-- <div class="success" v-else>
-        <img src="@/assets/image/bookingFinish-icon.png" alt="">
-      </div> -->
     </section>
   </div>
 </template>
 
 <script>
-import Booking from '../components/booking';
 import $ from 'jquery';
 
 export default {
@@ -592,7 +588,6 @@ export default {
       startDate: new Date(),
       endDate: new Date(),
       isLoading: false,
-      bookingstatus: false,
     };
   },
   computed: {
