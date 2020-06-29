@@ -1,4 +1,4 @@
-# hotel
+# house_hotel
 
 ## Project setup
 
